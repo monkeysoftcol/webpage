@@ -46,15 +46,23 @@ function baseController($scope) {
             type: 'info'
         });
     };
+    $scope.verSlide = true;
 }
 
 module.controller('HomeCtrl', ['$scope', '$http', function ($scope, $http) {
         console.log("Controlador home cargado!!!!");
         
         baseController($scope);
-        $scope.msjExito("Bienvenido");
+        //$scope.msjExito("Bienvenido");
        
     }]);
 
-
+module.controller('ContactoCtrl', ['$scope', '$http', function ($scope, $http) {
+        console.log("Controlador home cargado!!!!");
+        
+        baseController($scope);
+        $scope.verSlide = false;
+        //$scope.msjExito("Bienvenido");
+       
+    }]);
 
